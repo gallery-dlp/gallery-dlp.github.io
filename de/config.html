@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="canonical" href="https://gallery-dlp.github.io/de/config.html">
+  <link rel="icon" type="image/x-icon"  href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+
+  <title>gallery-dl Konfigurationsdatei Windows — Einrichtungsanleitung 2026</title>
+  <meta name="description" content="gallery-dl.conf unter Windows erstellen und konfigurieren. Ausgabeordner, Dateinamen-Vorlagen, Rate-Limiting, Cookies und seitenspezifische Optionen. Beispiele zum Kopieren.">
+  <meta name="keywords" content="gallery-dl konfiguration windows, gallery-dl.conf einrichten, gallery-dl konfigurationsdatei speicherort windows, gallery-dl einstellungen windows, gallery-dl dateiname vorlage">
+
+  <link rel="alternate" hreflang="en"        href="https://gallery-dlp.github.io/config.html">
+  <link rel="alternate" hreflang="de"        href="https://gallery-dlp.github.io/de/config.html">
+  <link rel="alternate" hreflang="pt"        href="https://gallery-dlp.github.io/pt/config.html">
+  <link rel="alternate" hreflang="fr"        href="https://gallery-dlp.github.io/fr/config.html">
+  <link rel="alternate" hreflang="es"        href="https://gallery-dlp.github.io/es/config.html">
+  <link rel="alternate" hreflang="it"        href="https://gallery-dlp.github.io/it/config.html">
+  <link rel="alternate" hreflang="x-default" href="https://gallery-dlp.github.io/config.html">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="de_DE">
+  <meta property="og:title"       content="gallery-dl Konfigurationsdatei Windows — Einrichtungsanleitung 2026">
+  <meta property="og:description" content="gallery-dl.conf unter Windows erstellen. Ausgabeordner, Dateinamen-Vorlagen, Cookies, Rate-Limiting. Beispiele zum Kopieren.">
+  <meta property="og:url"         content="https://gallery-dlp.github.io/de/config.html">
+  <meta property="og:image"       content="https://gallery-dlp.github.io/og-image.png">
+  <meta property="og:updated_time" content="2026-06-09T00:00:00Z">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="gallery-dl Konfigurationsdatei Windows — Einrichtungsanleitung">
+  <meta name="twitter:description" content="Ausgabeordner, Dateinamen-Vorlagen, Cookies, Rate-Limiting. Beispiele zum Kopieren.">
+  <meta name="twitter:image"       content="https://gallery-dlp.github.io/og-image.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NBSC2R7JJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1NBSC2R7JJ');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","inLanguage":"de","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Startseite","item":"https://gallery-dlp.github.io/de/"},
+      {"@type":"ListItem","position":2,"name":"gallery-dl Konfigurationsdatei Windows","item":"https://gallery-dlp.github.io/de/config.html"}
+    ]},
+    {"@type":"FAQPage","inLanguage":"de","mainEntity":[
+      {"@type":"Question","name":"Wo befindet sich die gallery-dl Konfigurationsdatei unter Windows?","acceptedAnswer":{"@type":"Answer","text":"gallery-dl sucht die Konfigurationsdatei unter %APPDATA%\\gallery-dl\\config.json (z. B. C:\\Users\\IhrName\\AppData\\Roaming\\gallery-dl\\config.json). Sie kann auch im gleichen Ordner wie gallery-dl.exe abgelegt werden."}},
+      {"@type":"Question","name":"Welches Format hat die gallery-dl Konfigurationsdatei?","acceptedAnswer":{"@type":"Answer","text":"gallery-dl verwendet standardmäßig JSON-Format (.conf oder .json Erweiterung). YAML und TOML werden ab Version 1.25+ ebenfalls unterstützt."}},
+      {"@type":"Question","name":"Wie lege ich den Download-Ordner in gallery-dl fest?","acceptedAnswer":{"@type":"Answer","text":"base-directory-Einstellung in der Konfiguration hinzufügen: {\"extractor\": {\"base-directory\": \"C:/Bilder/\"}}"}},
+      {"@type":"Question","name":"Wie lege ich eine benutzerdefinierte Dateinamen-Vorlage in gallery-dl fest?","acceptedAnswer":{"@type":"Answer","text":"filename-Option unter extractor verwenden. Beispiel: {\"extractor\": {\"filename\": \"{category}_{author}_{filename}.{extension}\"}}"}}
+    ],"dateModified":"2026-06-09"}
+  ]}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Hauptnavigation">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </a>
+    <div class="nav-links">
+      <a href="download-windows.html">Herunterladen</a>
+      <a href="install.html">Installieren</a>
+      <a href="config.html" aria-current="page">Konfiguration</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="commands.html">Befehle</a>
+      <a href="safe-legal.html">Sicher?</a>
+      <a href="troubleshooting.html">Fehlerbehebung</a>
+    </div>
+    <a href="download-windows.html" class="nav-cta">⬇ Herunterladen</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-eyebrow">Windows 11/10 &nbsp;·&nbsp; JSON-Konfiguration &nbsp;·&nbsp; Beispiele zum Kopieren</p>
+    <h1>gallery-dl Konfigurationsdatei unter Windows — Einrichtungsanleitung</h1>
+    <p class="lead">Die gallery-dl Konfigurationsdatei ermöglicht dauerhafte Standardwerte — Ausgabeordner, Dateinamen-Vorlagen, Rate-Limiting, Cookies und seitenspezifische Optionen. Kein Wiederholen von Flags bei jedem Befehl.</p>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="location-title">
+  <div class="container">
+    <p class="section-label">Speicherort der Konfigurationsdatei</p>
+    <h2 class="section-title" id="location-title">Wo sucht gallery-dl unter Windows nach der Konfigurationsdatei?</h2>
+    <p class="section-sub">gallery-dl prüft diese Speicherorte der Reihe nach — erster Treffer gewinnt.</p>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px">
+      <div class="card-dark" style="display:flex;align-items:center;gap:16px;padding:16px 20px">
+        <div style="font-size:11px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;min-width:70px">Priorität 1</div>
+        <div>
+          <code class="code" style="display:inline;background:transparent;padding:0;color:#a3e635">%APPDATA%\gallery-dl\config.json</code>
+          <p style="font-size:12px;color:#555;margin-top:4px">z. B. <code>C:\Users\IhrName\AppData\Roaming\gallery-dl\config.json</code> — empfohlen für dauerhafte Einrichtung</p>
+        </div>
+      </div>
+      <div class="card-dark" style="display:flex;align-items:center;gap:16px;padding:16px 20px">
+        <div style="font-size:11px;font-weight:700;color:#f59e0b;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;min-width:70px">Priorität 2</div>
+        <div>
+          <code class="code" style="display:inline;background:transparent;padding:0;color:#a3e635">gallery-dl.conf</code> (gleicher Ordner wie gallery-dl.exe)
+          <p style="font-size:12px;color:#555;margin-top:4px">Portable Einrichtung — Konfiguration reist mit der ausführbaren Datei</p>
+        </div>
+      </div>
+      <div class="card-dark" style="display:flex;align-items:center;gap:16px;padding:16px 20px">
+        <div style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;min-width:70px">CLI-Flag</div>
+        <div>
+          <code class="code" style="display:inline;background:transparent;padding:0;color:#a3e635">gallery-dl --config "C:\Pfad\zu\meinekonfig.json" "URL"</code>
+          <p style="font-size:12px;color:#555;margin-top:4px">Konfigurationspfad pro Befehl überschreiben</p>
+        </div>
+      </div>
+    </div>
+    <div style="background:#0d1a0d;border:1px solid #1a3a1a;border-left:3px solid var(--green);border-radius:0 10px 10px 0;padding:14px 18px;font-size:13px;color:#6a9a6a">
+      <strong style="color:#4ade80">Tipp:</strong> Ordner <code>%APPDATA%\gallery-dl\</code> erstellen falls nicht vorhanden. <kbd>Win</kbd>+<kbd>R</kbd> drücken, <code>%APPDATA%</code> eingeben, Enter drücken, dann neuen Ordner <code>gallery-dl</code> erstellen.
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="starter-title">
+  <div class="container">
+    <p class="section-label">Starter-Konfiguration</p>
+    <h2 class="section-title" id="starter-title">Empfohlene gallery-dl-Konfiguration für Windows — kopieren &amp; einfügen</h2>
+    <p class="section-sub" style="color:var(--muted)">Als <code>config.json</code> in <code>%APPDATA%\gallery-dl\</code> speichern. Pfade und Optionen nach Bedarf anpassen.</p>
+    <div class="cmd-block">
+      <div class="cmd-label">gallery-dl.conf — empfohlener Windows-Starter</div>
+      <code class="code">{
+  "extractor": {
+    "base-directory": "C:/Bilder/",
+    "filename": "{category}_{author}_{num:>04}_{filename}.{extension}",
+    "sleep-request": 1.5,
+    "retries": 5,
+    "timeout": 30,
+    "verify": true
+  },
+  "downloader": {
+    "part": true,
+    "rate": "2M"
+  },
+  "output": {
+    "mode": "terminal",
+    "progress": true,
+    "shorten": true
+  }
+}</code>
+    </div>
+    <div style="margin-top:14px;background:#fff8e1;border:1px solid #ffe082;border-left:4px solid #f59e0b;border-radius:0 10px 10px 0;padding:12px 16px;font-size:13px;color:#7c5e00">
+      <strong>Hinweis:</strong> JSON erfordert doppelte Anführungszeichen und keine nachgestellten Kommas. Vorwärtsschrägstriche <code>/</code> in Pfaden verwenden — funktionieren unter Windows einwandfrei und vermeiden JSON-Escape-Probleme mit Backslashes.
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="options-title">
+  <div class="container">
+    <p class="section-label">Wichtige Optionen erklärt</p>
+    <h2 class="section-title" id="options-title">Nützlichste gallery-dl-Konfigurationsoptionen für Windows</h2>
+    <div class="cmd-list">
+      <div class="cmd-block">
+        <div class="cmd-label">Download-Ordner festlegen — gilt für alle Seiten</div>
+        <code class="code">"base-directory": "C:/Bilder/"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Benutzerdefinierte Dateinamen-Vorlage — Kategorie + Autor + Nummer + Originalname</div>
+        <code class="code">"filename": "{category}_{author}_{num:>04}_{filename}.{extension}"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Seitenspezifischer Ausgabeordner — Instagram in eigenen Unterordner</div>
+        <code class="code">"directory": ["{category}", "{uploader}"]</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Anfragen verlangsamen um Rate-Limiting zu vermeiden (Sekunden zwischen Anfragen)</div>
+        <code class="code">"sleep-request": 2.0</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Download-Geschwindigkeit begrenzen (nützlich bei geteilten Verbindungen)</div>
+        <code class="code">"rate": "2M"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Cookies-Datei für bestimmte Seite setzen (Instagram-Beispiel)</div>
+        <code class="code">"instagram": {
+  "cookies": "C:/Tools/gallery-dl/instagram-cookies.txt"
+}</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="faq-title" style="border-top:none;padding-top:0">
+  <div class="container">
+    <p class="section-label">FAQ</p>
+    <h2 class="section-title" id="faq-title">gallery-dl Konfiguration — häufige Fragen</h2>
+    <div class="faq-list" style="margin-top:20px">
+      <details>
+        <summary>Wo befindet sich die gallery-dl Konfigurationsdatei unter Windows?</summary>
+        <div class="faq-body">Der Standardspeicherort ist <code>%APPDATA%\gallery-dl\config.json</code>. Ausführen (<kbd>Win</kbd>+<kbd>R</kbd>), <code>%APPDATA%\gallery-dl</code> eingeben und Enter drücken, um direkt dorthin zu navigieren. Alternativ <code>gallery-dl.conf</code> im gleichen Ordner wie gallery-dl.exe für portable Einrichtung ablegen.</div>
+      </details>
+      <details>
+        <summary>gallery-dl meldet "Konfigurationsdatei nicht gefunden" — wie beheben?</summary>
+        <div class="faq-body">gallery-dl benötigt keine Konfigurationsdatei — funktioniert auch ohne. Für eine eigene: Ordner <code>%APPDATA%\gallery-dl\</code> erstellen und JSON-Datei als <code>config.json</code> speichern. Gültiges JSON sicherstellen — ein fehlendes Komma oder Anführungszeichen bricht alles.</div>
+      </details>
+      <details>
+        <summary>Wie validiere ich meine gallery-dl JSON-Konfiguration?</summary>
+        <div class="faq-body">Konfiguration bei <a href="https://jsonlint.com" target="_blank" rel="noopener">jsonlint.com</a> einfügen, um auf Syntaxfehler zu prüfen. Häufige Fehler: nachgestellte Kommas nach dem letzten Element, einzelne statt doppelte Anführungszeichen, Windows-Backslashes in Pfaden (Vorwärtsschrägstriche oder <code>\\</code> verwenden).</div>
+      </details>
+      <details>
+        <summary>Kann ich verschiedene Einstellungen für verschiedene Seiten haben?</summary>
+        <div class="faq-body">Ja. Seitenspezifische Einstellungen unter dem Seiten-Schlüssel einbetten. Beispiel: <code>"instagram": {"sleep-request": 3}</code> innerhalb des <code>"extractor"</code>-Objekts. Seiten-Schlüssel entsprechen der <code>{category}</code>-Variable — instagram, twitter, pixiv, deviantart, reddit usw.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </div>
+    <nav class="footer-links" aria-label="Fußzeilennavigation">
+      <a href="index.html">Startseite</a>
+      <a href="download-windows.html">Herunterladen</a>
+      <a href="install.html">Installieren</a>
+      <a href="config.html">Konfiguration</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="deviantart.html">DeviantArt</a>
+      <a href="reddit.html">Reddit</a>
+      <a href="commands.html">Befehle</a>
+      <a href="troubleshooting.html">Fehlerbehebung</a>
+      <a href="safe-legal.html">Sicher?</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+    </nav>
+    <p class="footer-note">Inoffizielle gallery-dl-Anleitung für Windows. Nicht verbunden mit gallery-dl, seinem Autor mikf oder unterstützten Seiten. gallery-dl immer vom <a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener">offiziellen GitHub-Repository</a> herunterladen.</p>
+  </div>
+</footer>
+
+</body>
+</html>
