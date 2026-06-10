@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="canonical" href="https://gallery-dlp.github.io/es/commands.html">
+  <link rel="icon" type="image/x-icon"  href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+
+  <title>Comandos gallery-dl Windows — Referencia para Copiar 2026</title>
+  <meta name="description" content="Referencia de comandos gallery-dl para Windows. Descarga, cookies, filtros, plantillas de salida, archivo, rate limiting. Pega directamente en PowerShell o CMD.">
+  <meta name="keywords" content="gallery-dl comandos windows, gallery-dl referencia, gallery-dl ejemplos comandos, gallery-dl powershell comandos, gallery-dl flags windows, gallery-dl output template">
+
+  <link rel="alternate" hreflang="en"        href="https://gallery-dlp.github.io/commands.html">
+  <link rel="alternate" hreflang="de"        href="https://gallery-dlp.github.io/de/commands.html">
+  <link rel="alternate" hreflang="pt"        href="https://gallery-dlp.github.io/pt/commands.html">
+  <link rel="alternate" hreflang="fr"        href="https://gallery-dlp.github.io/fr/commands.html">
+  <link rel="alternate" hreflang="es"        href="https://gallery-dlp.github.io/es/commands.html">
+  <link rel="alternate" hreflang="it"        href="https://gallery-dlp.github.io/it/commands.html">
+  <link rel="alternate" hreflang="x-default" href="https://gallery-dlp.github.io/commands.html">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:title"       content="Comandos gallery-dl Windows — Referencia para Copiar">
+  <meta property="og:description" content="Descarga, cookies, filtros, plantillas de salida, archivo. Pega directamente en PowerShell.">
+  <meta property="og:url"         content="https://gallery-dlp.github.io/es/commands.html">
+  <meta property="og:image"       content="https://gallery-dlp.github.io/og-image.png">
+  <meta property="og:updated_time" content="2026-06-09T00:00:00Z">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Comandos gallery-dl Windows — Referencia para Copiar">
+  <meta name="twitter:description" content="Todos los comandos esenciales de gallery-dl. Pega directamente en PowerShell.">
+  <meta name="twitter:image"       content="https://gallery-dlp.github.io/og-image.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NBSC2R7JJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1NBSC2R7JJ');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","inLanguage":"es","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://gallery-dlp.github.io/es/"},
+      {"@type":"ListItem","position":2,"name":"Comandos gallery-dl","item":"https://gallery-dlp.github.io/es/commands.html"}
+    ]},
+    {"@type":"FAQPage","inLanguage":"es","mainEntity":[
+      {"@type":"Question","name":"¿Cuál es el comando básico de descarga de gallery-dl?","acceptedAnswer":{"@type":"Answer","text":"gallery-dl \"URL\" descarga todas las imágenes de la URL. Añade --cookies-from-browser chrome para sitios que requieren inicio de sesión."}},
+      {"@type":"Question","name":"¿Cómo defino la carpeta de salida en gallery-dl?","acceptedAnswer":{"@type":"Answer","text":"Usa el flag -d: gallery-dl -d \"C:\\Imagenes\" \"URL\". O define base-directory en config.json para un ajuste permanente."}},
+      {"@type":"Question","name":"¿Cómo omito los archivos ya descargados en gallery-dl?","acceptedAnswer":{"@type":"Answer","text":"Usa --download-archive archive.txt. gallery-dl registra cada URL descargada en el archivo y la omite en ejecuciones futuras."}},
+      {"@type":"Question","name":"¿Cómo filtro las descargas por tipo de archivo en gallery-dl?","acceptedAnswer":{"@type":"Answer","text":"Usa --image-filter: gallery-dl --image-filter \"extension in ('jpg','png')\" \"URL\""}}
+    ],"dateModified":"2026-06-09"}
+  ]}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Navegación principal">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </a>
+    <div class="nav-links">
+      <a href="download-windows.html">Descargar</a>
+      <a href="install.html">Instalar</a>
+      <a href="config.html">Configuración</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="commands.html" aria-current="page">Comandos</a>
+      <a href="safe-legal.html">¿Es seguro?</a>
+      <a href="troubleshooting.html">Solución de problemas</a>
+    </div>
+    <a href="download-windows.html" class="nav-cta">⬇ Descargar</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-eyebrow">Windows PowerShell / CMD &nbsp;·&nbsp; Copiar &amp; Pegar &nbsp;·&nbsp; Actualizado 2026</p>
+    <h1>Referencia de Comandos gallery-dl para Windows</h1>
+    <p class="lead">Todos los comandos esenciales de gallery-dl en un solo lugar. Pega directamente en PowerShell o CMD. Sustituye la URL por tu enlace de destino.</p>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="basics-title">
+  <div class="container">
+    <p class="section-label">Esenciales</p>
+    <h2 class="section-title" id="basics-title">Comandos básicos de gallery-dl</h2>
+    <div class="cmd-list">
+      <div class="cmd-block">
+        <div class="cmd-label">Descargar todas las imágenes de una URL</div>
+        <code class="code">gallery-dl "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Descargar con cookies del navegador (para sitios que requieren inicio de sesión)</div>
+        <code class="code">gallery-dl --cookies-from-browser chrome "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Verificar la versión instalada</div>
+        <code class="code">gallery-dl --version</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Actualizar a la última versión</div>
+        <code class="code">gallery-dl -U</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Simular — listar imágenes que se descargarían (sin descargar)</div>
+        <code class="code">gallery-dl --simulate "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Salida detallada para depuración</div>
+        <code class="code">gallery-dl -v "URL"</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="output-title">
+  <div class="container">
+    <p class="section-label">Salida &amp; nombres de archivo</p>
+    <h2 class="section-title" id="output-title">Definir carpeta de descarga y plantillas de nombre de archivo</h2>
+    <div class="cmd-list">
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Guardar en carpeta específica</div>
+        <code class="code">gallery-dl -d "C:\Imagenes" "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Nombre de archivo personalizado — categoría + autor + número secuencial</div>
+        <code class="code">gallery-dl --filename "{category}_{author}_{num:>04}.{extension}" "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Crear subcarpetas por sitio y autor</div>
+        <code class="code">gallery-dl -d "C:\Imagenes" --directory "{category}/{author}" "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Usar archivo de configuración personalizado</div>
+        <code class="code">gallery-dl --config "C:\Tools\gallery-dl\miconfig.json" "URL"</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="filters-title">
+  <div class="container">
+    <p class="section-label">Filtros &amp; selección</p>
+    <h2 class="section-title" id="filters-title">Filtrar descargas por tipo, fecha o cantidad</h2>
+    <div class="cmd-list">
+      <div class="cmd-block">
+        <div class="cmd-label">Descargar solo imágenes (ignorar vídeos)</div>
+        <code class="code">gallery-dl --image-filter "extension in ('jpg','jpeg','png','webp','gif')" "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Descargar solo las primeras 50 imágenes</div>
+        <code class="code">gallery-dl --chapter-filter "index &lt; 50" "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Omitir ya descargados — usar archivo de historial</div>
+        <code class="code">gallery-dl --download-archive "C:\Tools\gallery-dl\archivo.txt" "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Descargar solo imágenes de más de 500 KB</div>
+        <code class="code">gallery-dl --image-filter "filesize > 500000" "URL"</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="perf-title">
+  <div class="container">
+    <p class="section-label">Rendimiento &amp; rate limiting</p>
+    <h2 class="section-title" id="perf-title">Velocidad, reintentos y rate limiting</h2>
+    <div class="cmd-list">
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Limitar velocidad de descarga</div>
+        <code class="code">gallery-dl --rate 2M "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Pausa entre peticiones (segundos) — evita rate limits</div>
+        <code class="code">gallery-dl --sleep-request 2 "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Definir número de reintentos en caso de fallo</div>
+        <code class="code">gallery-dl --retries 5 "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Descarga masiva desde archivo de texto (una URL por línea)</div>
+        <code class="code">gallery-dl --input-file "C:\Tools\gallery-dl\enlaces.txt"</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="vars-title">
+  <div class="container">
+    <p class="section-label">Variables de nombre de archivo</p>
+    <h2 class="section-title" id="vars-title">Variables de plantilla comunes para --filename y --directory</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:13px">
+      <div class="card-dark" style="padding:12px 14px"><code>{filename}</code><br><span style="color:#555;font-size:12px">Nombre de archivo original</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{extension}</code><br><span style="color:#555;font-size:12px">Extensión de archivo</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{category}</code><br><span style="color:#555;font-size:12px">Nombre del sitio (instagram, pixiv…)</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{author}</code><br><span style="color:#555;font-size:12px">Nombre del autor / uploader</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{num}</code><br><span style="color:#555;font-size:12px">Número secuencial</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{num:&gt;04}</code><br><span style="color:#555;font-size:12px">Número con ceros (0001…)</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{date}</code><br><span style="color:#555;font-size:12px">Fecha de publicación/subida</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{date:%Y-%m-%d}</code><br><span style="color:#555;font-size:12px">Fecha formateada (2026-06-09)</span></div>
+      <div class="card-dark" style="padding:12px 14px"><code>{id}</code><br><span style="color:#555;font-size:12px">ID de la publicación / imagen</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </div>
+    <nav class="footer-links" aria-label="Navegación del pie de página">
+      <a href="index.html">Inicio</a>
+      <a href="download-windows.html">Descargar</a>
+      <a href="install.html">Instalar</a>
+      <a href="config.html">Configuración</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="deviantart.html">DeviantArt</a>
+      <a href="reddit.html">Reddit</a>
+      <a href="commands.html">Comandos</a>
+      <a href="troubleshooting.html">Solución de problemas</a>
+      <a href="safe-legal.html">¿Es seguro?</a>
+      <a href="privacy.html">Privacidad</a>
+      <a href="terms.html">Términos</a>
+    </nav>
+    <p class="footer-note">Guía no oficial de gallery-dl para Windows. No afiliado a gallery-dl ni a su autor mikf. Descarga siempre gallery-dl desde el <a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener">repositorio oficial de GitHub</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
