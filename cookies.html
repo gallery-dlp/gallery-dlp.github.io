@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="canonical" href="https://gallery-dlp.github.io/cookies.html">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>gallery-dl Cookies &amp; Login Windows — Authentication Guide 2026</title>
+  <meta name="description" content="How to use cookies with gallery-dl on Windows to download private or login-required content from Instagram, Twitter/X, Pixiv and more. Chrome, Firefox, Edge.">
+  <meta name="keywords" content="gallery-dl cookies windows, gallery-dl login windows, gallery-dl cookies from browser, gallery-dl authentication windows, gallery-dl private instagram, gallery-dl cookies.txt">
+
+  <link rel="alternate" hreflang="en"        href="https://gallery-dlp.github.io/cookies.html">
+  <link rel="alternate" hreflang="de"        href="https://gallery-dlp.github.io/de/cookies.html">
+  <link rel="alternate" hreflang="pt"        href="https://gallery-dlp.github.io/pt/cookies.html">
+  <link rel="alternate" hreflang="fr"        href="https://gallery-dlp.github.io/fr/cookies.html">
+  <link rel="alternate" hreflang="es"        href="https://gallery-dlp.github.io/es/cookies.html">
+  <link rel="alternate" hreflang="it"        href="https://gallery-dlp.github.io/it/cookies.html">
+  <link rel="alternate" hreflang="x-default" href="https://gallery-dlp.github.io/cookies.html">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="en_US">
+  <meta property="og:title"       content="gallery-dl Cookies &amp; Login Windows — Authentication Guide">
+  <meta property="og:description" content="Pass browser cookies to gallery-dl for private or login-required content. Chrome, Firefox, Edge. Copy-paste commands.">
+  <meta property="og:url"         content="https://gallery-dlp.github.io/cookies.html">
+  <meta property="og:image"       content="https://gallery-dlp.github.io/og-image.png">
+  <meta property="og:updated_time" content="2026-06-09T00:00:00Z">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="gallery-dl Cookies &amp; Login Windows — Authentication Guide">
+  <meta name="twitter:description" content="Chrome, Firefox, Edge cookie extraction. Private Instagram, Twitter/X, Pixiv.">
+  <meta name="twitter:image"       content="https://gallery-dlp.github.io/og-image.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NBSC2R7JJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1NBSC2R7JJ');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","inLanguage":"en","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://gallery-dlp.github.io/"},
+      {"@type":"ListItem","position":2,"name":"gallery-dl Cookies &amp; Login Windows","item":"https://gallery-dlp.github.io/cookies.html"}
+    ]},
+    {"@type":"FAQPage","inLanguage":"en","mainEntity":[
+      {"@type":"Question","name":"How do I use cookies with gallery-dl on Windows?","acceptedAnswer":{"@type":"Answer","text":"The simplest method: gallery-dl --cookies-from-browser chrome \"URL\". This reads cookies directly from your Chrome profile. Replace chrome with firefox or edge as needed."}},
+      {"@type":"Question","name":"Why does gallery-dl say login required?","acceptedAnswer":{"@type":"Answer","text":"The site requires authentication to access private or member-only content. You need to pass your browser cookies to gallery-dl using --cookies-from-browser or a cookies.txt file."}},
+      {"@type":"Question","name":"Can gallery-dl use a cookies.txt file?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use gallery-dl --cookies cookies.txt \"URL\". The cookies.txt must be in Netscape format, which browser extensions like Get cookies.txt LOCALLY can export."}},
+      {"@type":"Question","name":"Does gallery-dl support two-factor authentication?","acceptedAnswer":{"@type":"Answer","text":"gallery-dl cannot complete 2FA interactively. Log in to the site in your browser (including 2FA), then pass those browser cookies to gallery-dl with --cookies-from-browser."}}
+    ],"dateModified":"2026-06-09"}
+  ]}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </a>
+    <div class="nav-links">
+      <a href="download-windows.html">Download</a>
+      <a href="install.html">Install</a>
+      <a href="config.html">Config</a>
+      <a href="cookies.html" aria-current="page">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="commands.html">Commands</a>
+      <a href="safe-legal.html">Safe?</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+    </div>
+    <a href="download-windows.html" class="nav-cta">⬇ Download</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-eyebrow">Windows 11/10 &nbsp;·&nbsp; Chrome / Firefox / Edge &nbsp;·&nbsp; Private &amp; member-only content</p>
+    <h1>gallery-dl Cookies &amp; Login on Windows — Authentication Guide</h1>
+    <p class="lead">Many sites require login to download private galleries. gallery-dl reads cookies directly from your browser — no passwords stored, no manual export needed for Chrome, Firefox, and Edge.</p>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="quick-title">
+  <div class="container">
+    <p class="section-label">Fastest method</p>
+    <h2 class="section-title" id="quick-title">Pass browser cookies to gallery-dl in one command</h2>
+    <p class="section-sub">Works for most sites — Instagram, Twitter/X, Pixiv, DeviantArt, Reddit, Patreon and more. Make sure you're logged in to the site in your browser first.</p>
+    <div class="cmd-list">
+      <div class="cmd-block">
+        <div class="cmd-label">Use cookies from Chrome (most common)</div>
+        <code class="code">gallery-dl --cookies-from-browser chrome "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Use cookies from Firefox</div>
+        <code class="code">gallery-dl --cookies-from-browser firefox "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Use cookies from Microsoft Edge</div>
+        <code class="code">gallery-dl --cookies-from-browser edge "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Use cookies from Brave</div>
+        <code class="code">gallery-dl --cookies-from-browser brave "URL"</code>
+      </div>
+    </div>
+    <div style="margin-top:16px;background:#0d1a0d;border:1px solid #1a3a1a;border-left:3px solid var(--green);border-radius:0 10px 10px 0;padding:14px 18px;font-size:13px;color:#6a9a6a">
+      <strong style="color:#4ade80">Important:</strong> The browser must be closed or at least not actively syncing when gallery-dl reads cookies on Windows. If you get a "database locked" error, close Chrome/Firefox completely and try again.
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="cookiesfile-title">
+  <div class="container">
+    <p class="section-label">Cookies.txt file method</p>
+    <h2 class="section-title" id="cookiesfile-title">Using a cookies.txt file with gallery-dl on Windows</h2>
+    <p class="section-sub" style="color:var(--muted)">More reliable for automation and scheduled tasks — export once, reuse many times.</p>
+    <div class="steps-grid" style="grid-template-columns:repeat(4,1fr)">
+      <div class="step-card">
+        <div class="step-num">Step 01</div>
+        <h3>Install a cookies export extension</h3>
+        <p>Install <strong>Get cookies.txt LOCALLY</strong> from the Chrome Web Store or Firefox Add-ons. This exports in Netscape format that gallery-dl understands.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Step 02</div>
+        <h3>Log in to the target site</h3>
+        <p>Open the site in your browser and make sure you're fully logged in. Complete any 2FA if required.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Step 03</div>
+        <h3>Export cookies for that site</h3>
+        <p>Click the extension icon while on the site → Export. Save the file as <code>cookies.txt</code> in your gallery-dl folder, e.g. <code>C:\Tools\gallery-dl\instagram-cookies.txt</code></p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Step 04</div>
+        <h3>Pass the file to gallery-dl</h3>
+        <p>Use <code>--cookies</code> flag or add the path to your config file for permanent use.</p>
+      </div>
+    </div>
+    <div class="cmd-list" style="margin-top:20px">
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Use a cookies.txt file — CLI</div>
+        <code class="code">gallery-dl --cookies "C:\Tools\gallery-dl\instagram-cookies.txt" "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Set cookies file permanently in config.json (per site)</div>
+        <code class="code">"instagram": {
+  "cookies": "C:/Tools/gallery-dl/instagram-cookies.txt"
+}</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="persite-title">
+  <div class="container">
+    <p class="section-label">Per-site authentication</p>
+    <h2 class="section-title" id="persite-title">Site-specific authentication tips</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Instagram</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Required for private accounts and high-res downloads. Log in via browser, then:</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://www.instagram.com/username/"</code>
+      </div>
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Twitter / X</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Required for private accounts and to access full-resolution media. Twitter cookies expire frequently — re-export if it stops working.</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://x.com/username/media"</code>
+      </div>
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Pixiv</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Required for R-18 content and full image downloads. Log in at pixiv.net, then pass cookies.</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://www.pixiv.net/users/USER_ID"</code>
+      </div>
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Patreon</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Required for patron-only content. You must have an active subscription to the creator.</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://www.patreon.com/creator"</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="faq-title" style="border-top:none;padding-top:0">
+  <div class="container">
+    <p class="section-label">FAQ</p>
+    <h2 class="section-title" id="faq-title">gallery-dl cookies — frequently asked questions</h2>
+    <div class="faq-list" style="margin-top:20px">
+      <details>
+        <summary>gallery-dl says "Login required" even with cookies</summary>
+        <div class="faq-body">Your cookies may have expired. Log out and back in on the site, then re-run the <code>--cookies-from-browser</code> command. For cookies.txt files, export a fresh copy. Also make sure your browser is completely closed before gallery-dl reads its cookie database on Windows.</div>
+      </details>
+      <details>
+        <summary>"database is locked" when using --cookies-from-browser on Windows</summary>
+        <div class="faq-body">Chrome and Edge lock their SQLite cookie database while running. Close all browser windows completely (check the system tray too), then run gallery-dl again. Alternatively, export to a cookies.txt file and use <code>--cookies</code> instead.</div>
+      </details>
+      <details>
+        <summary>Is it safe to pass browser cookies to gallery-dl?</summary>
+        <div class="faq-body">gallery-dl reads cookies locally from your browser — they never leave your machine. The tool is open source and audited. Never share your cookies.txt file — it grants full account access to whoever has it. Delete the file when you no longer need it.</div>
+      </details>
+      <details>
+        <summary>Does gallery-dl support username/password login?</summary>
+        <div class="faq-body">Some extractors support direct username/password login via <code>-u USERNAME -p PASSWORD</code>. However, this doesn't work for sites with 2FA or modern auth flows. The <code>--cookies-from-browser</code> method is more reliable and recommended for most sites.</div>
+      </details>
+      <details>
+        <summary>How do I use cookies in the gallery-dl config file?</summary>
+        <div class="faq-body">Add the cookies path under the site key in your <code>config.json</code>:
+          <code class="code" style="margin-top:8px">"extractor": {
+  "instagram": {
+    "cookies": "C:/Tools/gallery-dl/cookies.txt"
+  }
+}</code>
+          This applies cookies automatically for every Instagram download without needing the CLI flag.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="download-windows.html">Download</a>
+      <a href="install.html">Install</a>
+      <a href="config.html">Config</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="deviantart.html">DeviantArt</a>
+      <a href="reddit.html">Reddit</a>
+      <a href="commands.html">Commands</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+      <a href="safe-legal.html">Safe?</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <p class="footer-note">Unofficial gallery-dl guide for Windows. Not affiliated with gallery-dl, its author mikf, or any supported sites. Always download gallery-dl from the <a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener">official GitHub repository</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
