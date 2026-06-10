@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="canonical" href="https://gallery-dlp.github.io/pt/cookies.html">
+  <link rel="icon" type="image/x-icon"  href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+
+  <title>gallery-dl Cookies &amp; Login Windows — Guia de Autenticação 2026</title>
+  <meta name="description" content="Como usar cookies do navegador com gallery-dl no Windows para baixar conteúdo privado ou que requer login do Instagram, Twitter/X, Pixiv e mais. Chrome, Firefox, Edge.">
+  <meta name="keywords" content="gallery-dl cookies windows, gallery-dl login windows, gallery-dl cookies-from-browser, gallery-dl autenticação windows, gallery-dl instagram privado, gallery-dl cookies.txt">
+
+  <link rel="alternate" hreflang="en"        href="https://gallery-dlp.github.io/cookies.html">
+  <link rel="alternate" hreflang="de"        href="https://gallery-dlp.github.io/de/cookies.html">
+  <link rel="alternate" hreflang="pt"        href="https://gallery-dlp.github.io/pt/cookies.html">
+  <link rel="alternate" hreflang="fr"        href="https://gallery-dlp.github.io/fr/cookies.html">
+  <link rel="alternate" hreflang="es"        href="https://gallery-dlp.github.io/es/cookies.html">
+  <link rel="alternate" hreflang="it"        href="https://gallery-dlp.github.io/it/cookies.html">
+  <link rel="alternate" hreflang="x-default" href="https://gallery-dlp.github.io/cookies.html">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="pt_BR">
+  <meta property="og:title"       content="gallery-dl Cookies &amp; Login Windows — Guia de Autenticação">
+  <meta property="og:description" content="Passe cookies do navegador para gallery-dl no Windows. Chrome, Firefox, Edge. Instagram privado, Twitter/X, Pixiv.">
+  <meta property="og:url"         content="https://gallery-dlp.github.io/pt/cookies.html">
+  <meta property="og:image"       content="https://gallery-dlp.github.io/og-image.png">
+  <meta property="og:updated_time" content="2026-06-09T00:00:00Z">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="gallery-dl Cookies &amp; Login Windows — Guia de Autenticação">
+  <meta name="twitter:description" content="Chrome, Firefox, Edge. Instagram privado, Twitter/X, Pixiv.">
+  <meta name="twitter:image"       content="https://gallery-dlp.github.io/og-image.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NBSC2R7JJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1NBSC2R7JJ');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","inLanguage":"pt","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Início","item":"https://gallery-dlp.github.io/pt/"},
+      {"@type":"ListItem","position":2,"name":"gallery-dl Cookies &amp; Login Windows","item":"https://gallery-dlp.github.io/pt/cookies.html"}
+    ]},
+    {"@type":"FAQPage","inLanguage":"pt","mainEntity":[
+      {"@type":"Question","name":"Como uso cookies com gallery-dl no Windows?","acceptedAnswer":{"@type":"Answer","text":"O método mais simples: gallery-dl --cookies-from-browser chrome \"URL\". Lê cookies diretamente do perfil do Chrome. Substitua chrome por firefox ou edge conforme necessário."}},
+      {"@type":"Question","name":"Por que gallery-dl diz que login é necessário?","acceptedAnswer":{"@type":"Answer","text":"O site requer autenticação para acessar conteúdo privado. Passe cookies do navegador com --cookies-from-browser ou um arquivo cookies.txt."}},
+      {"@type":"Question","name":"O gallery-dl pode usar um arquivo cookies.txt?","acceptedAnswer":{"@type":"Answer","text":"Sim. Use gallery-dl --cookies cookies.txt \"URL\". O cookies.txt deve estar no formato Netscape."}},
+      {"@type":"Question","name":"gallery-dl suporta autenticação de dois fatores?","acceptedAnswer":{"@type":"Answer","text":"O gallery-dl não pode completar 2FA interativamente. Faça login no site pelo navegador (incluindo 2FA), depois passe os cookies do navegador com --cookies-from-browser."}}
+    ],"dateModified":"2026-06-09"}
+  ]}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Navegação principal">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </a>
+    <div class="nav-links">
+      <a href="download-windows.html">Baixar</a>
+      <a href="install.html">Instalar</a>
+      <a href="config.html">Configuração</a>
+      <a href="cookies.html" aria-current="page">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="commands.html">Comandos</a>
+      <a href="safe-legal.html">É seguro?</a>
+      <a href="troubleshooting.html">Solução de Problemas</a>
+    </div>
+    <a href="download-windows.html" class="nav-cta">⬇ Baixar</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-eyebrow">Windows 11/10 &nbsp;·&nbsp; Chrome / Firefox / Edge &nbsp;·&nbsp; Conteúdo privado e que requer login</p>
+    <h1>gallery-dl Cookies &amp; Login no Windows — Guia de Autenticação</h1>
+    <p class="lead">Muitos sites requerem login para baixar galerias privadas. O gallery-dl lê cookies diretamente do seu navegador — sem senhas armazenadas, sem exportação manual para Chrome, Firefox e Edge.</p>
+  </div>
+</section>
+
+<div class="section-dark" style="padding:20px 0;border-bottom:1px solid var(--border-dark)">
+  <div class="container" style="display:flex;gap:12px;flex-wrap:wrap">
+    <a class="btn btn-green" href="download-windows.html">⬇ Baixar gallery-dl.exe</a>
+    <a class="btn btn-ghost" href="config.html">Guia de configuração →</a>
+  </div>
+</div>
+
+<section class="section-dark" aria-labelledby="quick-title">
+  <div class="container">
+    <p class="section-label">Método mais rápido</p>
+    <h2 class="section-title" id="quick-title">Passe cookies do navegador para gallery-dl em um comando</h2>
+    <p class="section-sub">Funciona para a maioria dos sites — Instagram, Twitter/X, Pixiv, DeviantArt, Reddit, Patreon e mais. Certifique-se de estar logado no site no seu navegador primeiro.</p>
+    <div class="cmd-list">
+      <div class="cmd-block">
+        <div class="cmd-label">Usar cookies do Chrome (mais comum)</div>
+        <code class="code">gallery-dl --cookies-from-browser chrome "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Usar cookies do Firefox</div>
+        <code class="code">gallery-dl --cookies-from-browser firefox "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Usar cookies do Microsoft Edge</div>
+        <code class="code">gallery-dl --cookies-from-browser edge "URL"</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Usar cookies do Brave</div>
+        <code class="code">gallery-dl --cookies-from-browser brave "URL"</code>
+      </div>
+    </div>
+    <div style="margin-top:16px;background:#0d1a0d;border:1px solid #1a3a1a;border-left:3px solid var(--green);border-radius:0 10px 10px 0;padding:14px 18px;font-size:13px;color:#6a9a6a">
+      <strong style="color:#4ade80">Importante:</strong> O navegador deve estar completamente fechado quando o gallery-dl lê os cookies no Windows. Se aparecer erro "database locked", feche completamente o Chrome/Firefox — inclusive na bandeja do sistema — e tente novamente.
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="cookiesfile-title">
+  <div class="container">
+    <p class="section-label">Método arquivo cookies.txt</p>
+    <h2 class="section-title" id="cookiesfile-title">Usando arquivo cookies.txt com gallery-dl no Windows</h2>
+    <p class="section-sub" style="color:var(--muted)">Mais confiável para automação e tarefas agendadas — exporte uma vez, reutilize várias vezes.</p>
+    <div class="steps-grid" style="grid-template-columns:repeat(4,1fr)">
+      <div class="step-card">
+        <div class="step-num">Passo 01</div>
+        <h3>Instalar extensão de exportação de cookies</h3>
+        <p>Instale <strong>Get cookies.txt LOCALLY</strong> da Chrome Web Store ou Firefox Add-ons. Exporta no formato Netscape que gallery-dl entende.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Passo 02</div>
+        <h3>Fazer login no site de destino</h3>
+        <p>Abra o site no navegador e certifique-se de estar totalmente logado. Complete qualquer 2FA se necessário.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Passo 03</div>
+        <h3>Exportar cookies para aquele site</h3>
+        <p>Clique no ícone da extensão no site → Exportar. Salve como <code>cookies.txt</code> na pasta do gallery-dl.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Passo 04</div>
+        <h3>Passar o arquivo para gallery-dl</h3>
+        <p>Use a flag <code>--cookies</code> ou adicione o caminho ao arquivo de configuração para uso permanente.</p>
+      </div>
+    </div>
+    <div class="cmd-list" style="margin-top:20px">
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Usar arquivo cookies.txt — CLI</div>
+        <code class="code">gallery-dl --cookies "C:\Tools\gallery-dl\instagram-cookies.txt" "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Definir arquivo de cookies permanentemente no config.json (por site)</div>
+        <code class="code">"instagram": {
+  "cookies": "C:/Tools/gallery-dl/instagram-cookies.txt"
+}</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="persite-title">
+  <div class="container">
+    <p class="section-label">Autenticação por site</p>
+    <h2 class="section-title" id="persite-title">Dicas de autenticação específicas por site</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Instagram</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Necessário para contas privadas e downloads em alta resolução. Faça login pelo navegador, depois:</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://www.instagram.com/username/"</code>
+      </div>
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Twitter / X</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Necessário para contas privadas. Os cookies do Twitter expiram com frequência — re-exporte se parar de funcionar.</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://x.com/username/media"</code>
+      </div>
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Pixiv</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Necessário para conteúdo R-18 e downloads completos. Faça login em pixiv.net e passe os cookies.</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://www.pixiv.net/users/USER_ID"</code>
+      </div>
+      <div class="card-dark">
+        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:10px">Patreon</h3>
+        <p style="font-size:13px;color:#888;margin-bottom:10px">Necessário para conteúdo exclusivo de patrocinadores. Você deve ter uma assinatura ativa do criador.</p>
+        <code class="code" style="font-size:12px">gallery-dl --cookies-from-browser chrome "https://www.patreon.com/creator"</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="faq-title" style="border-top:none;padding-top:0">
+  <div class="container">
+    <p class="section-label">Perguntas Frequentes</p>
+    <h2 class="section-title" id="faq-title">gallery-dl cookies — perguntas frequentes</h2>
+    <div class="faq-list" style="margin-top:20px">
+      <details>
+        <summary>gallery-dl diz "Login necessário" mesmo com cookies</summary>
+        <div class="faq-body">Seus cookies podem ter expirado. Faça logout e login novamente no site, depois execute novamente com <code>--cookies-from-browser chrome</code>. Para arquivos cookies.txt, exporte uma cópia nova. Certifique-se também de que o navegador está completamente fechado antes do gallery-dl ler seu banco de dados de cookies no Windows.</div>
+      </details>
+      <details>
+        <summary>"database is locked" ao usar --cookies-from-browser no Windows</summary>
+        <div class="faq-body">Chrome e Edge bloqueiam seu banco de dados SQLite de cookies enquanto estão em execução. Feche todas as janelas do navegador completamente (verifique também a bandeja do sistema), depois execute o gallery-dl novamente. Alternativamente, exporte para um arquivo cookies.txt e use <code>--cookies</code>.</div>
+      </details>
+      <details>
+        <summary>É seguro passar cookies do navegador para gallery-dl?</summary>
+        <div class="faq-body">O gallery-dl lê cookies localmente do seu navegador — eles nunca saem do seu computador. A ferramenta é código aberto e auditada. Nunca compartilhe seu arquivo cookies.txt — ele concede acesso completo à conta. Delete o arquivo quando não precisar mais.</div>
+      </details>
+      <details>
+        <summary>gallery-dl suporta login com usuário e senha?</summary>
+        <div class="faq-body">Alguns extratores suportam login direto com <code>-u USERNAME -p PASSWORD</code>. Porém isso não funciona para sites com 2FA ou fluxos de autenticação modernos. O método <code>--cookies-from-browser</code> é mais confiável e recomendado para a maioria dos sites.</div>
+      </details>
+      <details>
+        <summary>Como uso cookies no arquivo de configuração do gallery-dl?</summary>
+        <div class="faq-body">Adicione o caminho dos cookies sob a chave do site em <code>config.json</code>:
+          <code class="code" style="margin-top:8px">"extractor": {
+  "instagram": {
+    "cookies": "C:/Tools/gallery-dl/cookies.txt"
+  }
+}</code>
+          Isso aplica cookies automaticamente para cada download do Instagram sem precisar da flag CLI.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </div>
+    <nav class="footer-links" aria-label="Navegação do rodapé">
+      <a href="index.html">Início</a>
+      <a href="download-windows.html">Baixar</a>
+      <a href="install.html">Instalar</a>
+      <a href="config.html">Configuração</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="deviantart.html">DeviantArt</a>
+      <a href="reddit.html">Reddit</a>
+      <a href="commands.html">Comandos</a>
+      <a href="troubleshooting.html">Solução de Problemas</a>
+      <a href="safe-legal.html">É seguro?</a>
+      <a href="privacy.html">Privacidade</a>
+      <a href="terms.html">Termos</a>
+    </nav>
+    <p class="footer-note">Guia não oficial do gallery-dl para Windows. Não afiliado ao gallery-dl, seu autor mikf ou sites suportados. Sempre baixe o gallery-dl do <a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener">repositório oficial no GitHub</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

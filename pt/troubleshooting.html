@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="canonical" href="https://gallery-dlp.github.io/pt/troubleshooting.html">
+  <link rel="icon" type="image/x-icon"  href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+
+  <title>gallery-dl Não Funciona no Windows — Corrigir Erros Comuns 2026</title>
+  <meta name="description" content="Corrija erros do gallery-dl no Windows: login necessário, 403 forbidden, erro SSL, não reconhecido, nenhuma imagem encontrada, downloads lentos. Soluções passo a passo.">
+  <meta name="keywords" content="gallery-dl nao funciona windows, gallery-dl erro windows, gallery-dl 403 forbidden, gallery-dl login necessario, gallery-dl nao reconhecido, gallery-dl ssl erro windows">
+
+  <link rel="alternate" hreflang="en"        href="https://gallery-dlp.github.io/troubleshooting.html">
+  <link rel="alternate" hreflang="de"        href="https://gallery-dlp.github.io/de/troubleshooting.html">
+  <link rel="alternate" hreflang="pt"        href="https://gallery-dlp.github.io/pt/troubleshooting.html">
+  <link rel="alternate" hreflang="fr"        href="https://gallery-dlp.github.io/fr/troubleshooting.html">
+  <link rel="alternate" hreflang="es"        href="https://gallery-dlp.github.io/es/troubleshooting.html">
+  <link rel="alternate" hreflang="it"        href="https://gallery-dlp.github.io/it/troubleshooting.html">
+  <link rel="alternate" hreflang="x-default" href="https://gallery-dlp.github.io/troubleshooting.html">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="pt_BR">
+  <meta property="og:title"       content="gallery-dl Não Funciona no Windows — Corrigir Erros Comuns">
+  <meta property="og:description" content="Corrija login necessário, 403, erros SSL, não reconhecido, sem imagens. Soluções passo a passo para Windows.">
+  <meta property="og:url"         content="https://gallery-dlp.github.io/pt/troubleshooting.html">
+  <meta property="og:image"       content="https://gallery-dlp.github.io/og-image.png">
+  <meta property="og:updated_time" content="2026-06-09T00:00:00Z">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="gallery-dl Não Funciona no Windows — Corrigir Erros Comuns">
+  <meta name="twitter:description" content="Login, 403, SSL, não reconhecido, sem imagens. Soluções para Windows.">
+  <meta name="twitter:image"       content="https://gallery-dlp.github.io/og-image.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NBSC2R7JJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1NBSC2R7JJ');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","inLanguage":"pt","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Início","item":"https://gallery-dlp.github.io/pt/"},
+      {"@type":"ListItem","position":2,"name":"gallery-dl Solução de Problemas Windows","item":"https://gallery-dlp.github.io/pt/troubleshooting.html"}
+    ]},
+    {"@type":"FAQPage","inLanguage":"pt","mainEntity":[
+      {"@type":"Question","name":"gallery-dl diz que login é necessário — como corrigir?","acceptedAnswer":{"@type":"Answer","text":"Execute gallery-dl --cookies-from-browser chrome \"URL\". Certifique-se de estar logado no site no Chrome primeiro. Feche o Chrome completamente antes de executar gallery-dl no Windows."}},
+      {"@type":"Question","name":"gallery-dl não é reconhecido como comando no PowerShell","acceptedAnswer":{"@type":"Answer","text":"Execute gallery-dl da pasta onde gallery-dl.exe está salvo, ou adicione essa pasta ao PATH do Windows. Veja o guia de instalação para configuração de PATH passo a passo."}},
+      {"@type":"Question","name":"gallery-dl HTTP erro 403 — como corrigir?","acceptedAnswer":{"@type":"Answer","text":"Atualize gallery-dl com gallery-dl -U. Se o site requer login, passe cookies com --cookies-from-browser chrome."}},
+      {"@type":"Question","name":"gallery-dl não baixa nada / fecha imediatamente","acceptedAnswer":{"@type":"Answer","text":"O site provavelmente requer login. Tente gallery-dl --cookies-from-browser chrome \"URL\". Execute gallery-dl -v \"URL\" para saída detalhada."}}
+    ],"dateModified":"2026-06-09"}
+  ]}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Navegação principal">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </a>
+    <div class="nav-links">
+      <a href="download-windows.html">Baixar</a>
+      <a href="install.html">Instalar</a>
+      <a href="config.html">Configuração</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="commands.html">Comandos</a>
+      <a href="safe-legal.html">É seguro?</a>
+      <a href="troubleshooting.html" aria-current="page">Solução de Problemas</a>
+    </div>
+    <a href="download-windows.html" class="nav-cta">⬇ Baixar</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-eyebrow">Windows 11/10 &nbsp;·&nbsp; Erros comuns &nbsp;·&nbsp; Soluções passo a passo</p>
+    <h1>gallery-dl Não Funciona no Windows — Corrigir Erros Comuns</h1>
+    <p class="lead">A maioria dos erros do gallery-dl no Windows tem soluções simples. Comece aqui: atualize com <code>gallery-dl -U</code> e verifique os cookies. Isso resolve 80% dos problemas.</p>
+  </div>
+</section>
+
+<div class="section-dark" style="padding:20px 0;border-bottom:1px solid var(--border-dark)">
+  <div class="container">
+    <p style="font-size:13px;color:#888;margin-bottom:10px;font-weight:600">Sempre comece aqui:</p>
+    <div class="cmd-list" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div class="cmd-block">
+        <div class="cmd-label">Passo 1 — atualizar gallery-dl</div>
+        <code class="code">gallery-dl -U</code>
+      </div>
+      <div class="cmd-block">
+        <div class="cmd-label">Passo 2 — saída detalhada para ver o erro completo</div>
+        <code class="code">gallery-dl -v "URL"</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section-dark" aria-labelledby="errors-title" style="border-top:none;padding-top:36px">
+  <div class="container">
+    <p class="section-label">Referência de erros</p>
+    <h2 class="section-title" id="errors-title">Mensagens de erro do gallery-dl e como corrigi-las</h2>
+    <div class="faq-list" style="margin-top:20px">
+
+      <details open>
+        <summary>"Login required" ou "Authentication required"</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> O site requer que você esteja logado para acessar este conteúdo.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Faça login no site no Chrome (ou Firefox/Edge), feche o navegador completamente, depois execute:
+          <code class="code" style="margin-top:8px">gallery-dl --cookies-from-browser chrome "URL"</code>
+          Se os cookies continuarem expirando, exporte um arquivo <code>cookies.txt</code>. Veja o <a href="cookies.html">guia de cookies</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>"gallery-dl não é reconhecido como comando"</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> PowerShell não encontra gallery-dl.exe porque sua pasta não está no PATH.<br><br>
+          <strong style="color:#ddd">Solução — opção 1:</strong> Navegue até a pasta contendo gallery-dl.exe no Explorer, clique na barra de endereços, digite <code>powershell</code>, pressione Enter. Execute gallery-dl de lá.<br><br>
+          <strong style="color:#ddd">Solução — opção 2:</strong> Adicione a pasta do gallery-dl ao PATH. Veja o <a href="install.html">guia de instalação</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>HTTP erro 403 Forbidden</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> O site está bloqueando a requisição — rate limiting, login necessário ou bloqueio geográfico.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Primeiro atualize: <code>gallery-dl -U</code>. Depois tente com cookies:
+          <code class="code" style="margin-top:8px">gallery-dl --cookies-from-browser chrome "URL"</code>
+          Se estiver usando VPN, tente desativá-la. Adicione <code>--sleep-request 3</code> se estiver atingindo rate limits.
+        </div>
+      </details>
+
+      <details>
+        <summary>gallery-dl não baixa nada — fecha imediatamente</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> Login necessário, formato de URL não suportado ou extrator precisa de atualização.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Execute com saída detalhada:
+          <code class="code" style="margin-top:8px">gallery-dl -v "URL"</code>
+          Depois tente com cookies: <code>gallery-dl --cookies-from-browser chrome "URL"</code>. Atualize: <code>gallery-dl -U</code>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Erro de certificado SSL no Windows</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> Repositório de certificados do Windows desatualizado, ou proxy/VPN interceptando HTTPS.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Execute Windows Update (Configurações → Windows Update), depois tente novamente. Como último recurso apenas: <code>gallery-dl --no-check-certificate "URL"</code> — não recomendado a longo prazo.
+        </div>
+      </details>
+
+      <details>
+        <summary>Windows SmartScreen bloqueia gallery-dl.exe</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> SmartScreen sinaliza executáveis portáteis não assinados por padrão — isso é um falso positivo.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Clique em <strong>Mais informações</strong> → <strong>Executar mesmo assim</strong>. Ou clique com o botão direito em gallery-dl.exe → Propriedades → marque <strong>Desbloquear</strong> na parte inferior → OK.
+        </div>
+      </details>
+
+      <details>
+        <summary>"database is locked" ao usar --cookies-from-browser</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> Chrome ou Edge bloqueia seu banco de dados SQLite de cookies enquanto está em execução.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Feche o navegador completamente — incluindo o ícone na bandeja do sistema. Depois execute gallery-dl novamente. Alternativamente, exporte cookies para um arquivo <code>cookies.txt</code> e use <code>--cookies</code>.
+        </div>
+      </details>
+
+      <details>
+        <summary>gallery-dl está muito lento — downloads travam ou param</summary>
+        <div class="faq-body">
+          <strong style="color:#ddd">Causa:</strong> Rate limiting pelo site, conexão instável ou VPN throttling.<br><br>
+          <strong style="color:#ddd">Solução:</strong> Adicione <code>--sleep-request 3 --retries 5</code> ao comando. Para travamentos persistentes, tente <code>--part</code> para retomar downloads parciais.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="diag-title">
+  <div class="container">
+    <p class="section-label">Diagnóstico</p>
+    <h2 class="section-title" id="diag-title">Comandos de depuração — obtenha mais informações</h2>
+    <div class="cmd-list">
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Saída detalhada — veja detalhes completos do erro e log de requisições</div>
+        <code class="code">gallery-dl -v "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Simular — listar o que seria baixado sem baixar</div>
+        <code class="code">gallery-dl --simulate "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Imprimir todos os campos de metadados disponíveis para uma URL</div>
+        <code class="code">gallery-dl --dump-json "URL"</code>
+      </div>
+      <div class="cmd-block" style="background:var(--off-white);border-color:var(--border-light)">
+        <div class="cmd-label" style="color:var(--muted)">Verificar versão instalada</div>
+        <code class="code">gallery-dl --version</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </div>
+    <nav class="footer-links" aria-label="Navegação do rodapé">
+      <a href="index.html">Início</a>
+      <a href="download-windows.html">Baixar</a>
+      <a href="install.html">Instalar</a>
+      <a href="config.html">Configuração</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="deviantart.html">DeviantArt</a>
+      <a href="reddit.html">Reddit</a>
+      <a href="commands.html">Comandos</a>
+      <a href="troubleshooting.html">Solução de Problemas</a>
+      <a href="safe-legal.html">É seguro?</a>
+      <a href="privacy.html">Privacidade</a>
+      <a href="terms.html">Termos</a>
+    </nav>
+    <p class="footer-note">Guia não oficial do gallery-dl para Windows. Não afiliado ao gallery-dl ou seu autor mikf. Sempre baixe o gallery-dl do <a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener">repositório oficial no GitHub</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
