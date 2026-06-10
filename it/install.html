@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="canonical" href="https://gallery-dlp.github.io/it/install.html">
+  <link rel="icon" type="image/x-icon"  href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+
+  <title>Cómo Instalar gallery-dl en Windows — Guía Paso a Paso 2026</title>
+  <meta name="description" content="Cómo descargar e instalar gallery-dl en Windows 11/10. Añade al PATH, ejecuta desde PowerShell, verifica la versión, actualiza con -U. Sin Python. 5 minutos.">
+  <meta name="keywords" content="instalar gallery-dl windows, gallery-dl windows 11 instalar, gallery-dl.exe configurar, añadir gallery-dl al path windows, cómo instalar gallery-dl 2026, gallery-dl powershell">
+
+  <link rel="alternate" hreflang="en"        href="https://gallery-dlp.github.io/install.html">
+  <link rel="alternate" hreflang="de"        href="https://gallery-dlp.github.io/de/install.html">
+  <link rel="alternate" hreflang="pt"        href="https://gallery-dlp.github.io/pt/install.html">
+  <link rel="alternate" hreflang="fr"        href="https://gallery-dlp.github.io/fr/install.html">
+  <link rel="alternate" hreflang="es"        href="https://gallery-dlp.github.io/it/install.html">
+  <link rel="alternate" hreflang="it"        href="https://gallery-dlp.github.io/it/install.html">
+  <link rel="alternate" hreflang="x-default" href="https://gallery-dlp.github.io/install.html">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="it_IT">
+  <meta property="og:title"       content="Cómo Instalar gallery-dl en Windows — Guía Paso a Paso 2026">
+  <meta property="og:description" content="Descarga gallery-dl.exe, configura el PATH, ejecuta desde PowerShell. Sin Python. 5 minutos.">
+  <meta property="og:url"         content="https://gallery-dlp.github.io/it/install.html">
+  <meta property="og:image"       content="https://gallery-dlp.github.io/og-image.png">
+  <meta property="og:updated_time" content="2026-06-09T00:00:00Z">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Cómo Instalar gallery-dl en Windows — Guía Paso a Paso 2026">
+  <meta name="twitter:description" content="Descarga .exe, PATH, PowerShell. Sin Python. En menos de 5 minutos.">
+  <meta name="twitter:image"       content="https://gallery-dlp.github.io/og-image.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NBSC2R7JJ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1NBSC2R7JJ');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","inLanguage":"it","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://gallery-dlp.github.io/it/"},
+      {"@type":"ListItem","position":2,"name":"Instalar gallery-dl en Windows","item":"https://gallery-dlp.github.io/it/install.html"}
+    ]},
+    {"@type":"HowTo","inLanguage":"it","name":"Cómo instalar gallery-dl en Windows","totalTime":"PT5M",
+      "supply":[{"@type":"HowToSupply","name":"PC con Windows 11 o Windows 10 (64 bits)"}],
+      "tool":[{"@type":"HowToTool","name":"PowerShell o Símbolo del sistema"}],
+      "step":[
+        {"@type":"HowToStep","position":1,"name":"Descargar gallery-dl.exe","text":"Descarga la última gallery-dl.exe desde la página oficial de releases de GitHub."},
+        {"@type":"HowToStep","position":2,"name":"Guardar en carpeta dedicada","text":"Mueve gallery-dl.exe a una ubicación permanente como C:\\Tools\\gallery-dl\\"},
+        {"@type":"HowToStep","position":3,"name":"Añadir al PATH (opcional)","text":"Añade la carpeta al PATH del usuario para ejecutar gallery-dl desde cualquier directorio."},
+        {"@type":"HowToStep","position":4,"name":"Abrir PowerShell y verificar","text":"Abre PowerShell en la carpeta y ejecuta: gallery-dl --version"},
+        {"@type":"HowToStep","position":5,"name":"Actualizar gallery-dl","text":"Mantén gallery-dl actualizado ejecutando: gallery-dl -U"}
+      ],"dateModified":"2026-06-09"
+    },
+    {"@type":"FAQPage","inLanguage":"it","mainEntity":[
+      {"@type":"Question","name":"¿Necesito Python para instalar gallery-dl en Windows?","acceptedAnswer":{"@type":"Answer","text":"No. La versión gallery-dl.exe incluye un runtime de Python internamente. Simplemente descarga el .exe y ejecuta."}},
+      {"@type":"Question","name":"¿Cómo añado gallery-dl al PATH en Windows?","acceptedAnswer":{"@type":"Answer","text":"Abre el menú Inicio, busca Variables de entorno, haz clic en Editar las variables de entorno del sistema, abre Path en Variables de usuario, haz clic en Nuevo y pega la ruta de la carpeta, haz clic en Aceptar. Reinicia el terminal."}},
+      {"@type":"Question","name":"¿Cómo actualizo gallery-dl en Windows?","acceptedAnswer":{"@type":"Answer","text":"Ejecuta gallery-dl -U en PowerShell. Descarga y reemplaza automáticamente el ejecutable por la última versión."}},
+      {"@type":"Question","name":"gallery-dl no se reconoce como comando en PowerShell","acceptedAnswer":{"@type":"Answer","text":"Ejecuta gallery-dl desde la carpeta donde está guardado gallery-dl.exe, o añade esa carpeta al PATH. Después de añadir al PATH, cierra y vuelve a abrir el terminal."}}
+    ]}
+  ]}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Navigazione principale">
+  <div class="container nav-inner">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </a>
+    <div class="nav-links">
+      <a href="download-windows.html">Scarica</a>
+      <a href="install.html" aria-current="page">Installa</a>
+      <a href="config.html">Configurazione</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="commands.html">Comandi</a>
+      <a href="safe-legal.html">È sicuro?</a>
+      <a href="troubleshooting.html">Risoluzione problemi</a>
+    </div>
+    <a href="download-windows.html" class="nav-cta">⬇ Scarica</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-eyebrow">Windows 11 / 10 &nbsp;·&nbsp; 5 minutos &nbsp;·&nbsp; Sin Python, sin derechos de admin</p>
+    <h1>Cómo Instalar gallery-dl en Windows — Guía Paso a Paso 2026</h1>
+    <p class="lead">Descarga gallery-dl.exe, guárdalo en una carpeta, abre PowerShell — listo. Añade opcionalmente al PATH para uso en todo el sistema. No se necesita instalar Python.</p>
+  </div>
+</section>
+
+<div class="section-dark" style="padding:24px 0">
+  <div class="container" style="display:flex;gap:12px;flex-wrap:wrap">
+    <a class="btn btn-green" href="download-windows.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Descargar gallery-dl.exe
+    </a>
+    <a class="btn btn-ghost" href="config.html">Configurar archivo de configuración →</a>
+  </div>
+</div>
+
+<section class="section-dark" aria-labelledby="steps-title" style="padding-top:40px">
+  <div class="container">
+    <p class="section-label">Instalación paso a paso</p>
+    <h2 class="section-title" id="steps-title">Instalar gallery-dl en Windows en 5 pasos</h2>
+    <p class="section-sub">Funciona en Windows 11 y Windows 10 (64 bits). Sin asistente de instalación, sin derechos de administrador.</p>
+    <div class="steps-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="step-card">
+        <div class="step-num">Paso 01</div>
+        <h3>Descargar gallery-dl.exe</h3>
+        <p>Ve a la <a href="download-windows.html" style="color:var(--green)">página de descarga</a> y guarda <code>gallery-dl.exe</code> desde la versión oficial de GitHub.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Paso 02</div>
+        <h3>Guardar en carpeta dedicada</h3>
+        <p>Mueve el archivo a una ubicación permanente, ej: <code>C:\Tools\gallery-dl\</code>. Evita Descargas — los archivos allí pueden borrarse automáticamente.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Paso 03</div>
+        <h3>Abrir PowerShell en esa carpeta</h3>
+        <p>En el Explorador, haz clic en la barra de direcciones, escribe <code>powershell</code> y pulsa Intro. PowerShell se abre directamente en la carpeta correcta.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Paso 04</div>
+        <h3>Verificar que funciona</h3>
+        <p>Ejecuta <code>gallery-dl --version</code>. Debería aparecer un número de versión como <code>1.28.x</code>. Si es así, funciona.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Paso 05</div>
+        <h3>Actualizar a la última versión</h3>
+        <p>Ejecuta <code>gallery-dl -U</code>. Descarga y reemplaza automáticamente por la última versión. Hazlo regularmente.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Opcional</div>
+        <h3>Configurar archivo de configuración</h3>
+        <p>Crea un <code>gallery-dl.conf</code> para definir carpetas de salida por defecto, plantillas de nombre de archivo y cookies. <a href="config.html" style="color:var(--green)">Guía de configuración →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light" aria-labelledby="path-title">
+  <div class="container">
+    <p class="section-label">Opcional pero recomendado</p>
+    <h2 class="section-title" id="path-title">Cómo añadir gallery-dl al PATH en Windows</h2>
+    <p class="section-sub" style="color:var(--muted)">Con gallery-dl en el PATH puedes ejecutar <code>gallery-dl</code> desde cualquier carpeta en PowerShell o CMD.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card-light">
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:12px">Método gráfico (recomendado)</h3>
+        <ol style="padding-left:18px;font-size:14px;color:var(--muted);line-height:1.8">
+          <li>Pulsa <kbd>Win</kbd> y busca <strong>Variables de entorno</strong></li>
+          <li>Haz clic en <strong>Editar las variables de entorno del sistema</strong></li>
+          <li>En <em>Variables de usuario</em>, selecciona <strong>Path</strong> → <strong>Editar</strong></li>
+          <li>Haz clic en <strong>Nuevo</strong> y pega la ruta, ej: <code>C:\Tools\gallery-dl</code></li>
+          <li>Haz clic en <strong>Aceptar</strong> en todos los diálogos y reinicia el terminal</li>
+        </ol>
+      </div>
+      <div class="card-light">
+        <h3 style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:12px">Método PowerShell</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:10px">Ejecuta una vez en PowerShell — define el PATH solo para tu usuario, sin derechos de admin:</p>
+        <code class="code">setx PATH "%PATH%;C:\Tools\gallery-dl"</code>
+        <p style="font-size:12px;color:var(--muted);margin-top:10px">Cierra y vuelve a abrir PowerShell. Prueba con <code>gallery-dl --version</code> desde cualquier directorio.</p>
+      </div>
+    </div>
+    <div style="margin-top:16px;background:#fff8e1;border:1px solid #ffe082;border-left:4px solid #f59e0b;border-radius:0 10px 10px 0;padding:12px 16px;font-size:13px;color:#7c5e00">
+      <strong>Nota:</strong> Si ves <em>«gallery-dl no se reconoce»</em> después de añadir al PATH, cierra todas las ventanas del terminal y vuelve a abrirlas — los cambios del PATH solo tienen efecto en nuevas sesiones.
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" aria-labelledby="trouble-title">
+  <div class="container">
+    <p class="section-label">Problemas comunes</p>
+    <h2 class="section-title" id="trouble-title">Solucionar problemas de instalación de gallery-dl en Windows</h2>
+    <div class="faq-list" style="margin-top:20px">
+      <details>
+        <summary>Advertencia de Windows SmartScreen al ejecutar gallery-dl.exe</summary>
+        <div class="faq-body">Haz clic en <strong>Más información</strong> → <strong>Ejecutar de todos modos</strong>. SmartScreen señala los ejecutables nuevos por defecto. gallery-dl.exe es la versión oficial de código abierto sin modificar de GitHub. Alternativamente: clic derecho → Propiedades → marca <strong>Desbloquear</strong> en la parte inferior → Aceptar.</div>
+      </details>
+      <details>
+        <summary>«gallery-dl no se reconoce» en PowerShell</summary>
+        <div class="faq-body">Dos opciones: ejecuta gallery-dl directamente desde su carpeta, o añade la carpeta al PATH (ver sección anterior). Después de añadir al PATH, cierra todas las ventanas del terminal y vuelve a abrirlas.</div>
+      </details>
+      <details>
+        <summary>«Acceso denegado» o archivo bloqueado por el antivirus</summary>
+        <div class="faq-body">Clic derecho en <code>gallery-dl.exe</code> → <strong>Propiedades</strong> → marca <strong>Desbloquear</strong> en la parte inferior si es visible → Aceptar. Si el antivirus bloquea, añade una excepción — es un falso positivo para portables de código abierto.</div>
+      </details>
+      <details>
+        <summary>gallery-dl no descarga nada / se cierra inmediatamente</summary>
+        <div class="faq-body">El sitio probablemente requiere inicio de sesión. Ejecuta <code>gallery-dl --cookies-from-browser chrome "URL"</code>. Ver la <a href="cookies.html">guía de cookies</a> para detalles completos.</div>
+      </details>
+    </div>
+    <p style="margin-top:16px;font-size:13px;color:#666">
+      ¿Más problemas? <a href="troubleshooting.html">Guía completa de solución de problemas de gallery-dl →</a>
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></div>
+      gallery-dlp Windows Helper
+    </div>
+    <nav class="footer-links" aria-label="Navigazione a piè di pagina">
+      <a href="index.html">Home</a>
+      <a href="download-windows.html">Scarica</a>
+      <a href="install.html">Installa</a>
+      <a href="config.html">Configurazione</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter-x.html">Twitter/X</a>
+      <a href="pixiv.html">Pixiv</a>
+      <a href="deviantart.html">DeviantArt</a>
+      <a href="reddit.html">Reddit</a>
+      <a href="commands.html">Comandi</a>
+      <a href="troubleshooting.html">Risoluzione problemi</a>
+      <a href="safe-legal.html">È sicuro?</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Termini</a>
+    </nav>
+    <p class="footer-note">Guía no oficial de gallery-dl para Windows. Non affiliato a gallery-dl, al suo autore mikf o ai siti supportati. Scarica sempre gallery-dl dal <a href="https://github.com/mikf/gallery-dl" target="_blank" rel="noopener">repository ufficiale GitHub</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
